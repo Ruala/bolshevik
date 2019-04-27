@@ -27,6 +27,7 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/index.html'),
+            filename: "index.html",
             inject: "body",
         }),
         new HtmlWebpackPlugin({
