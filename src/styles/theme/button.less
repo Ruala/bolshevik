@@ -26,7 +26,7 @@
 @button-default-active-background:              darken(@button-default-background, 10%);
 @button-default-active-color:                   @global-emphasis-color;
 
-@button-primary-background:                     linear-gradient(184deg, #ff0000, #f53b02); // @global-primary-background;
+@button-primary-background:                     @global-primary-background;
 @button-primary-color:                          @global-inverse-color;
 @button-primary-hover-background:               linear-gradient(184deg, darken(#ff0000, 5%), darken(#f53b02, 5%));
 @button-primary-hover-color:                    @global-inverse-color;
@@ -108,7 +108,7 @@
 // Primary
 //
 
-.hook-button-primary() { border: none; } // @button-border-width solid transparent; }
+.hook-button-primary() { border: none; background: linear-gradient(184deg, #ff0000, #f53b02); } // @button-border-width solid transparent; }
 
 .hook-button-primary-hover() {}
 
