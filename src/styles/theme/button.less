@@ -78,7 +78,9 @@
 @button-text-border-width:                      @global-border-width;
 @button-text-border:                            @button-text-hover-color;
 
-
+@inverse-button-primary-color:                  @global-inverse-color;
+@inverse-button-primary-hover-color:            @global-inverse-color;
+@inverse-button-primary-active-color:           @global-inverse-color;
 // Component
 // ========================================================================
 
@@ -86,6 +88,7 @@
     text-transform: @button-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color, border-color;
+    border-radius: 35px;
 }
 
 .hook-button-hover() {}
