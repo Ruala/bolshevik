@@ -31,6 +31,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: Path.resolve(__dirname, '../src/thanks.html'),
+            filename: "thanks.html",
             inject: "body",
         }),
         new webpack.ProvidePlugin({
