@@ -29,6 +29,10 @@ module.exports = {
             template: Path.resolve(__dirname, '../src/index.html'),
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/thanks.html'),
+            inject: "body",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
