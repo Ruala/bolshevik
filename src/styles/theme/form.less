@@ -73,7 +73,7 @@
 @form-icon-hover-color:                         @global-color;
 
 @internal-form-select-image:                     "../../images/backgrounds/form-select.svg";
-@internal-form-radio-image:                      "../../images/backgrounds/form-radio.svg";
+@internal-form-radio-image:                      "/images/radio-dot.png";
 @internal-form-checkbox-image:                   "/images/checkbox-dot.svg";
 @internal-form-checkbox-indeterminate-image:     "../../images/backgrounds/form-checkbox-indeterminate.svg";
 
@@ -153,7 +153,8 @@
 
 .hook-form-radio-focus() { border-color: @form-radio-focus-border; }
 
-.hook-form-radio-checked() { border-color: @form-radio-checked-border; }
+.hook-form-radio-checked() { border-color: @form-radio-checked-border;
+  background-position: 50% 50%; }
 
 .hook-form-radio-checked-focus() {}
 
