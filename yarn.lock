@@ -1604,6 +1604,10 @@ cssesc@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-0.1.0.tgz#c814903e45623371a0477b40109aaafbeeaddbb4"
 
+custom-event@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/custom-event/-/custom-event-1.0.1.tgz#5d02a46850adf1b4a317946a3928fccb5bfd0425"
+
 cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
@@ -1962,6 +1966,10 @@ esutils@^2.0.2:
 etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
+
+ev-pos@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ev-pos/-/ev-pos-1.0.1.tgz#8bd7726667dfc3322f7f33e12bfd8a79658f66d0"
 
 eventemitter3@^3.0.0:
   version "3.1.0"
@@ -2862,6 +2870,10 @@ isstream@~0.1.2:
 jquery-mousewheel@~3.1.13:
   version "3.1.13"
   resolved "https://registry.yarnpkg.com/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
+
+jquery@>=1.9.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
 
 jquery@^3.3.1:
   version "3.3.1"
@@ -3868,6 +3880,19 @@ randomfill@^1.0.3:
 range-parser@^1.0.3, range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
+
+rangeslider-js@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/rangeslider-js/-/rangeslider-js-3.2.1.tgz#cfde680ae81f9aa8eb4d1d86b3e0032aed23e916"
+  dependencies:
+    custom-event "^1.0.1"
+    ev-pos "^1.0.1"
+
+rangeslider.js@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/rangeslider.js/-/rangeslider.js-2.3.2.tgz#8f11b3817ce1784c687bf81deb9493fb40122fc1"
+  dependencies:
+    jquery ">=1.9.0"
 
 raw-body@2.3.3:
   version "2.3.3"
