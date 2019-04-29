@@ -11,6 +11,7 @@
     const mapPositionOptions = {
         center: [55.844733068907196,37.57289899999999],
         zoom: 17,
+        controls: [],
     };
     const mapOptions = {
         searchControlProvider: 'yandex#search',
