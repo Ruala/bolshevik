@@ -2,6 +2,27 @@
   line-height: 1;
 }
 
+.uk-navbar-toggle {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 39px;
+    height: 39px;
+    background-color: @global-secondary-background;
+    border-radius: 5px;
+  }
+
+  svg {
+    position: relative;
+    z-index: 2;
+  }
+}
 
 .uk-list-bullet > li {
   padding-left: 15px;
@@ -187,4 +208,85 @@
 .tm-margin-sm-vertical {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.tm-phone-red {
+  width: 40px;
+  height: 40px;
+  background-color: @global-primary-background;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tm-phone-text {
+  font-size: 9px;
+  color: #fff;
+}
+
+
+@media (max-width: 959px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .uk-text-large {
+    font-size: 18px;
+  }
+
+  .uk-subnav > * > :first-child {
+    font-size: 12px;
+  }
+
+  .tm-font-size-medium {
+    font-size: 16px;
+  }
+
+  .uk-card-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .uk-button {
+    font-size: 18px;
+  }
+
+  .uk-button-large {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .uk-logo {
+    font-size: 22px;
+
+    .uk-text-small {
+      font-size: 8px;
+    }
+  }
+
+  .tm-tab {
+    display: none;
+  }
 }
