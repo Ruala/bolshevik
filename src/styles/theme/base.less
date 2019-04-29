@@ -44,13 +44,13 @@
 @base-h2-font-size-m:                           @global-xlarge-font-size;
 @base-h2-font-size:                             @base-h2-font-size-m * 0.85;
 @base-h2-line-height:                           1.3;
-@base-h3-font-size:                             @global-large-font-size;
+@base-h3-font-size:                             24px; //@global-large-font-size;
 @base-h3-line-height:                           1.4;
-@base-h4-font-size:                             @global-medium-font-size;
+@base-h4-font-size:                             @global-large-font-size; //@global-medium-font-size;
 @base-h4-line-height:                           1.4;
-@base-h5-font-size:                             @global-font-size;
+@base-h5-font-size:                             @global-medium-font-size; //@global-font-size;
 @base-h5-line-height:                           1.4;
-@base-h6-font-size:                             @global-small-font-size;
+@base-h6-font-size:                             @global-font-size; //@global-small-font-size;
 @base-h6-line-height:                           1.4;
 
 @base-list-padding-left:                        30px;
@@ -123,17 +123,24 @@
 
 .hook-base-heading() {}
 
-.hook-base-h1() {}
+.hook-base-h1() {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
 
 .hook-base-h2() {}
 
-.hook-base-h3() {}
+.hook-base-h3() {
+  margin-bottom: 25px;
+}
 
 .hook-base-h4() {}
 
 .hook-base-h5() {}
 
-.hook-base-h6() {}
+.hook-base-h6() {
+  font-weight: 500;
+}
 
 
 // Horizontal rules

@@ -55,7 +55,7 @@
 // New
 //
 
-@navbar-nav-item-text-transform:                uppercase;
+@navbar-nav-item-text-transform:                none;
 
 @navbar-dropdown-nav-font-size:                 @global-small-font-size;
 
@@ -88,11 +88,15 @@
     transition-property: color, background-color;
 }
 
-.hook-navbar-nav-item-hover() {}
+.hook-navbar-nav-item-hover() {
+  font-weight: 700;
+}
 
 .hook-navbar-nav-item-onclick() {}
 
-.hook-navbar-nav-item-active() {}
+.hook-navbar-nav-item-active() {
+  font-weight: 700;
+}
 
 
 // Item

@@ -8,10 +8,10 @@
 // ========================================================================
 
 @card-body-padding-horizontal:                 @global-gutter;
-@card-body-padding-vertical:                   @global-gutter;
+@card-body-padding-vertical:                   @global-gutter + 10px;
 
 @card-body-padding-horizontal-l:               @global-medium-gutter;
-@card-body-padding-vertical-l:                 @global-medium-gutter;
+@card-body-padding-vertical-l:                 @global-medium-gutter + 10px;
 
 @card-header-padding-horizontal:               @global-gutter;
 @card-header-padding-vertical:                 round(@global-gutter / 2);
@@ -95,7 +95,9 @@
 // Sections
 // ========================================================================
 
-.hook-card-body() {}
+.hook-card-body() {
+  border-radius: 5px;
+}
 
 .hook-card-header() {}
 

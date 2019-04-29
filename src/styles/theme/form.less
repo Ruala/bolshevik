@@ -46,14 +46,14 @@
 @form-select-option-color:                      #444;
 @form-select-disabled-icon-color:               @global-muted-color;
 
-@form-radio-size:                               16px;
+@form-radio-size:                               24px; //16px;
 @form-radio-margin-top:                         -4px;
-@form-radio-background:                         darken(@global-muted-background, 5%);
+@form-radio-background:                         @global-inverse-color; //darken(@global-muted-background, 5%);
 
-@form-radio-checked-background:                 @global-primary-background;
-@form-radio-checked-icon-color:                 @global-inverse-color;
+@form-radio-checked-background:                 @global-inverse-color; //@global-primary-background;
+@form-radio-checked-icon-color:                 @global-primary-background; //@global-inverse-color;
 
-@form-radio-checked-focus-background:           darken(@global-primary-background, 10%);
+@form-radio-checked-focus-background:           @global-inverse-color; //darken(@global-primary-background, 10%);
 
 @form-radio-disabled-background:                @global-muted-background;
 @form-radio-disabled-icon-color:                @global-muted-color;
@@ -74,7 +74,7 @@
 
 @internal-form-select-image:                     "../../images/backgrounds/form-select.svg";
 @internal-form-radio-image:                      "../../images/backgrounds/form-radio.svg";
-@internal-form-checkbox-image:                   "../../images/backgrounds/form-checkbox.svg";
+@internal-form-checkbox-image:                   "/images/checkbox-dot.svg";
 @internal-form-checkbox-indeterminate-image:     "../../images/backgrounds/form-checkbox-indeterminate.svg";
 
 
@@ -96,11 +96,11 @@
 @form-blank-focus-border-style:                 dashed;
 
 @form-radio-border-width:                       @global-border-width;
-@form-radio-border:                             darken(@global-border, 10%);
+@form-radio-border:                             @global-border; //darken(@global-border, 10%);
 
 @form-radio-focus-border:                       @global-primary-background;
 
-@form-radio-checked-border:                     transparent;
+@form-radio-checked-border:                     @global-primary-background; //transparent;
 
 @form-radio-disabled-border:                    @global-border;
 
@@ -148,6 +148,7 @@
     border: @form-radio-border-width solid @form-radio-border;
     transition: 0.2s ease-in-out;
     transition-property: background-color, border;
+  border-radius: 5px;
 }
 
 .hook-form-radio-focus() { border-color: @form-radio-focus-border; }

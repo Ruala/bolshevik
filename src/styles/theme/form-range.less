@@ -7,11 +7,11 @@
 // Variables
 // ========================================================================
 
-@form-range-thumb-height:                       15px;
+@form-range-thumb-height:                       22px; //15px;
 @form-range-thumb-border-radius:                500px;
-@form-range-thumb-background:                   @global-color;
+@form-range-thumb-background:                   @global-primary-background; // @global-color;
 
-@form-range-track-height:                       3px;
+@form-range-track-height:                       7px; //3px;
 @form-range-track-background:                   darken(@global-muted-background, 5%);
 @form-range-track-focus-background:             darken(@global-muted-background, 15%);
 
@@ -19,8 +19,8 @@
 // New
 //
 
-@form-range-thumb-border-width:                 @global-border-width;
-@form-range-thumb-border:                       darken(@global-border, 10%);
+@form-range-thumb-border-width:                 2px; //@global-border-width;
+@form-range-thumb-border:                       #fff; // darken(@global-border, 10%);
 
 @form-range-track-border-radius:                500px;
 
@@ -34,7 +34,7 @@
 // Thumb
 // ========================================================================
 
-.hook-form-range-thumb() { border: @form-range-thumb-border-width solid @form-range-thumb-border; }
+.hook-form-range-thumb() { border: @form-range-thumb-border-width solid @form-range-thumb-border; box-shadow: 0px -3px 8.1px 0.9px rgba(0, 0, 0, 0.17); margin-top: -7px; }
 
 
 // Track
