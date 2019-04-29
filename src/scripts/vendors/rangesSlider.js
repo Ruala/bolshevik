@@ -1,4 +1,2 @@
 // import 'rangesSlider';
-import 'rangeslider-js';
-import ''
-
+import 'rangeslider.js';

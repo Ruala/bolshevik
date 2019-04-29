@@ -28,8 +28,6 @@
     function init(){
         const myMap = new ymaps.Map('map', mapPositionOptions, mapOptions);
 
-        // myMap.behaviors.disable('scrollZoom');
-
         myMap.geoObjects.add(new ymaps.Placemark(placemarkOptions.coords, {
             hintContent: placemarkOptions.hintContent,
             balloonContent: placemarkOptions.balloonContent,
@@ -37,7 +35,7 @@
             iconLayout: 'default#image',
             iconImageHref: 'images/baloon.png',
             iconImageSize: [28, 40],
-            iconImageOffset: [-30, -50]
+            iconImageOffset: [-30, -50],
         }));
     }
 })();

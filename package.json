@@ -13,6 +13,8 @@
     "@babel/polyfill": "^7.2.5",
     "@fortawesome/fontawesome-free": "^5.7.2",
     "jquery": "^3.3.1",
+    "jquery-validation": "^1.19.0",
+    "jquery.maskedinput": "^1.4.1",
     "rangeslider-js": "^3.2.1",
     "rangeslider.js": "^2.3.2",
     "select2": "^4.0.6-rc.1",
