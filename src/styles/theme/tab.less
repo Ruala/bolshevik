@@ -11,10 +11,10 @@
 
 @tab-item-padding-horizontal:            10px;
 @tab-item-padding-vertical:              5px;
-@tab-item-color:                         @global-muted-color;
-@tab-item-hover-color:                   @global-color;
+@tab-item-color:                         @global-emphasis-color;
+@tab-item-hover-color:                   @global-primary-background;
 @tab-item-hover-text-decoration:         none;
-@tab-item-active-color:                  @global-emphasis-color;
+@tab-item-active-color:                  @global-primary-background;
 @tab-item-disabled-color:                @global-muted-color;
 
 
@@ -24,10 +24,9 @@
 
 @tab-border-width:                              @global-border-width;
 @tab-border:                                    @global-border;
-
 @tab-item-border-width:                         @global-border-width;
-@tab-item-font-size:                            @global-small-font-size;
-@tab-item-text-transform:                       uppercase;
+@tab-item-font-size:                            @global-medium-font-size;
+@tab-item-text-transform:                       none; //uppercase;
 
 @tab-item-active-border:                        @global-primary-background;
 
@@ -59,11 +58,13 @@
     font-size: @tab-item-font-size;
     text-transform: @tab-item-text-transform;
     transition: color 0.1s ease-in-out;
+  text-decoration: none;
 }
 
 .hook-tab-item-hover() {}
 
-.hook-tab-item-active() { border-color: @tab-item-active-border; }
+.hook-tab-item-active() { border-color: @tab-item-active-border; border-width: 3px;
+  font-weight: 700; }
 
 .hook-tab-item-disabled() {}
 
