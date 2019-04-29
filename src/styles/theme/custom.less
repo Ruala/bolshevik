@@ -62,3 +62,19 @@
 .tm-font-size-medium {
   font-size: @global-medium-font-size;
 }
+
+.tm-star {
+  position: relative;
+  padding-left: 25px;
+
+  &::before {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 0;
+    display: block;
+    content: '';
+    background: url("/images/red-star.svg");
+  }
+}
