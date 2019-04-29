@@ -2,6 +2,18 @@
   line-height: 1;
 }
 
+.uk-list-bullet > li {
+  padding-left: 15px;
+
+  &::before {
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    background: @global-secondary-background;
+    border-radius: 50%;
+  }
+}
+
 .tm-h2 {
   font-size: 36px;
 }
@@ -16,6 +28,13 @@
 
 .tm-text-black {
   font-weight: 900;
+}
+
+.tm-list_no-gutters {
+
+  > li:nth-child(n+2), > li > ul {
+    margin-top: 0;
+  }
 }
 
 .tm-pageheader {
@@ -42,18 +61,33 @@
   margin-bottom: 20px;
 }
 
+.tm-portfolio {
+
+  .uk-tab > * {
+    display: flex;
+
+    > a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
 .tm-tab__count {
   display: inline-block;
   width: 40px;
-  padding: 1px 0;
   background-color: @global-secondary-background;
-  border-radius: 11.5px;
+  border-radius: 500px;
   font-weight: normal;
   font-size: @global-small-font-size;
   color: @global-inverse-color;
+  line-height: 23px;
 }
 
 .tm-portfolio-inner-tab {
+  padding-bottom: 15px;
+  background-color: @global-muted-background;
+
   h6 {
     font-weight: 700;
   }
@@ -77,4 +111,12 @@
     content: '';
     background: url("/images/red-star.png");
   }
+}
+
+.tm-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

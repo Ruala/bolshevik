@@ -241,10 +241,10 @@
 
                     <ul class="tm-tab uk-child-width-expand"
                         uk-tab="connect: #tm-portfolio-tab; animation: uk-animation-fade">
-                        <li><a href="#">Все <span class="tm-tab__count">18</span></a></li>
-                        <li><a href="#">Косметический <span class="tm-tab__count">8</span></a></li>
-                        <li><a href="#">Капитальный <span class="tm-tab__count">6</span></a></li>
-                        <li><a href="#">Евроремонт <span class="tm-tab__count">6</span></a></li>
+                        <li><a href="#"><span class="uk-margin-small-right">Все</span> <span class="tm-tab__count">18</span></a></li>
+                        <li><a href="#"><span class="uk-margin-small-right">Косметический</span> <span class="tm-tab__count">8</span></a></li>
+                        <li><a href="#"><span class="uk-margin-small-right">Капитальный</span> <span class="tm-tab__count">6</span></a></li>
+                        <li><a href="#"><span class="uk-margin-small-right">Евроремонт</span> <span class="tm-tab__count">6</span></a></li>
                     </ul>
 
                     <ul id="tm-portfolio-tab" class="uk-switcher uk-margin">
@@ -4529,7 +4529,7 @@
                             </div>
 
                             <div class="uk-margin">
-                                <div class="uk-form-label uk-h6">Введите площадь квартиры:</div>
+                                <div class="uk-form-label uk-h6 uk-margin-top">Введите площадь квартиры:</div>
                                 <div class="uk-form-controls uk-form-controls-text">
                                     <div class="uk-grid uk-grid-small uk-flex-middle uk-margin" uk-grid>
                                         <div class="uk-width-auto">
@@ -4560,49 +4560,66 @@
                             <div class="uk-margin">
                                 <div class="uk-h6">Дополнительные работы:</div>
                                 <div class="uk-form-controls uk-margin-remove">
-                                    <div class="uk-child-width-1-3@m uk-grid uk-flex-middle uk-margin" uk-grid>
+                                    <div class="uk-child-width-1-3@m uk-grid uk-flex-stretch uk-margin uk-text-small" uk-grid>
                                         <div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox" checked> Демонтаж
-                                                    старых покрытий</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span class="uk-margin-small-left">Демонтаж старых покрытий</span></label>
                                             </div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox"> Демонтаж старой
-                                                    электрики</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span class="uk-margin-small-left">Демонтаж старой электрики</span>
+                                                </label>
                                             </div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox" checked> Монтаж
-                                                    натяжного потолка</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span class="uk-margin-small-left">Монтаж натяжного потолка</span>
+                                                </label>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox"> Установка
-                                                    межкомнатных дверей</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span class="uk-margin-small-left">Установка межкомнатных дверей</span>
+                                                </label>
                                             </div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox"> Прокладка
-                                                    кабеля</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span class="uk-margin-small-left">Прокладка кабеля</span>
+                                                </label>
                                             </div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox" checked> Грунтовка
-                                                    стен и пола</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span class="uk-margin-small-left">Грунтовка стен и пола</span>
+                                                </label>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox" checked> Шпатлевка и
-                                                    штукатурка стен</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span class="uk-margin-small-left">Шпатлевка и штукатурка стен</span>
+                                                </label>
                                             </div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox"> Настил линолеума,
-                                                    ковралина</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span class="uk-margin-small-left">Настил линолеума, ковролина</span>
+                                                </label>
                                             </div>
                                             <div>
-                                                <label><input class="uk-checkbox" type="checkbox"> Монтаж
-                                                    электроточки</label>
+                                                <label class="uk-flex uk-margin-small">
+                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span class="uk-margin-small-left">Монтаж электроточки</span>
+                                                </label>
                                             </div>
                                         </div>
 
@@ -4711,9 +4728,9 @@
         </div>
 
         <!--Footer-->
-        <footer class="uk-section uk-padding-remove">
-            <div id="map"></div>
-            <div class="uk-container uk-flex uk-flex-right">
+        <footer class="uk-section uk-padding-remove uk-position-relative">
+            <div id="map" class="tm-map"></div>
+            <div class="uk-container uk-flex uk-flex-right uk-position-relative">
                 <div class="tm-contacts">
                     <h2>Контакты</h2>
                     <div class="uk-flex uk-flex-middle uk-margin">
