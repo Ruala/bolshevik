@@ -2,6 +2,7 @@
   line-height: 1;
 }
 
+
 .uk-list-bullet > li {
   padding-left: 15px;
 
@@ -11,6 +12,18 @@
     height: 5px;
     background: @global-secondary-background;
     border-radius: 50%;
+  }
+}
+
+.uk-slider {
+
+  a {
+    color: @global-color;
+    text-decoration: none;
+
+    h5 {
+      color: @global-secondary-background
+    }
   }
 }
 
@@ -91,6 +104,16 @@
   h6 {
     font-weight: 700;
   }
+
+  .uk-slidenav {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.tm-slider_padding {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .tm-font-size-medium {
@@ -110,6 +133,42 @@
     display: block;
     content: '';
     background: url("/images/red-star.png");
+  }
+}
+
+.tm-slogan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #161313;
+  border-radius: 500px;
+  background-color: #fff;
+  box-shadow: 0px 0px 16.56px 1.44px rgba(0, 0, 0, 0.18);
+
+  &::after {
+    content: '';
+    width: 22px;
+    height: 13px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("/images/slogan-arrow.png") no-repeat;
+  }
+}
+
+.tm-contacts {
+  min-height: 530px;
+  padding: 50px 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-sizing: border-box;
+
+  h2 {
+    font-size: 36px;
   }
 }
 
