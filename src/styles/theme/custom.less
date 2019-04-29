@@ -42,15 +42,27 @@
   margin-bottom: 20px;
 }
 
+.tm-portfolio {
+
+  .uk-tab > * {
+    display: flex;
+
+    > a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
 .tm-tab__count {
   display: inline-block;
   width: 40px;
-  padding: 1px 0;
   background-color: @global-secondary-background;
-  border-radius: 11.5px;
+  border-radius: 500px;
   font-weight: normal;
   font-size: @global-small-font-size;
   color: @global-inverse-color;
+  line-height: 23px;
 }
 
 .tm-portfolio-inner-tab {
@@ -78,3 +90,4 @@
     background: url("/images/red-star.png");
   }
 }
+
