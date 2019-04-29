@@ -34,10 +34,10 @@
             hintContent: placemarkOptions.hintContent,
             balloonContent: placemarkOptions.balloonContent,
         }, {
-            // iconLayout: 'default#image',
-            // iconImageHref: 'images/baloon.png',
-            // iconImageSize: [28, 40],
-            // iconImageOffset: [-30, -50]
+            iconLayout: 'default#image',
+            iconImageHref: 'images/baloon.png',
+            iconImageSize: [28, 40],
+            iconImageOffset: [-30, -50]
         }));
     }
 })();
