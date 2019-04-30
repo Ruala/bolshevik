@@ -4,4 +4,4 @@ import './uikit';
 import './fontawesome';
 import './select2';
 import './rangesSlider';
-import './jqueryValidation';
+import './mask';

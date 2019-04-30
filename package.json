@@ -12,6 +12,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@fortawesome/fontawesome-free": "^5.7.2",
+    "expose-loader": "^0.7.5",
+    "inputmask": "^4.0.8",
     "jquery": "^3.3.1",
     "jquery-validation": "^1.19.0",
     "jquery.maskedinput": "^1.4.1",
