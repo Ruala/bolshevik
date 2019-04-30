@@ -14,6 +14,9 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
             const currData = $currModalForm.serializeArray();
             const url = $currModalForm.attr('action');
             const formData = getFormData();
+            const $btn = $currModalForm.find('button, input[type="submit"]');
+
+            $btn.attr('disable', true);
 
             $currModalForm.addClass('js__sending');
 
@@ -33,6 +36,7 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
                 },
                 complete: () => {
                     $currModalForm.removeClass('js__sending');
+                    $btn.attr('disable', false);
                 },
             });
         },
