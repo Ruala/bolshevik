@@ -271,9 +271,16 @@
   color: #fff;
 }
 
+.tm-tabcontrol-wrapper {
+  border: 2px solid @global-primary-background;
+  border-radius: 35px;
+}
+
 .tm-button-tabcontrol {
   display: none;
   position: relative;
+
+  border: none;
 
   width: 100%;
   padding-left: 25px;
@@ -401,5 +408,17 @@
 
   .tm-tabcontrol-open {
     display: block;
+
+    padding-left: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    &::before {
+      content: none;
+    }
+
+    li > a {
+      border: none;
+    }
   }
 }
