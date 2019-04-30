@@ -2681,6 +2681,12 @@ invert-kv@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
 
+ion-rangeslider@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/ion-rangeslider/-/ion-rangeslider-2.3.0.tgz#7957ce2e78acfc956b8c43009373da91f743347e"
+  dependencies:
+    jquery ">=1.8"
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -2885,11 +2891,7 @@ jquery-validation@^1.19.0:
   dependencies:
     jquery "^1.7 || ^2.0 || ^3.1"
 
-jquery.maskedinput@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/jquery.maskedinput/-/jquery.maskedinput-1.4.1.tgz#3ea8f4cdc4eafce7354c27b66a73d0f44defc327"
-
-jquery@>=1.9.0, "jquery@^1.7 || ^2.0 || ^3.1":
+jquery@>=1.8, jquery@>=1.9.0, "jquery@^1.7 || ^2.0 || ^3.1":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
 
