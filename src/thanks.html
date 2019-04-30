@@ -11,33 +11,62 @@
 <body>
 
 <div class="uk-offcanvas-content">
-    <div class="uk-width-1-1 uk-child-width-1-1 uk-height-viewport uk-cover uk-flex uk-flex-middle"
+    <div class="uk-height-viewport uk-background-cover"
          style="background-image: url(images/bg-thanks.jpg);">
-        <div class="uk-container">
-            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-large-bottom">
-                <div>
-                    <a class="uk-logo uk-flex uk-flex-column uk-flex-top" href="/">
-                        <span class="tm-text-black">
-                            <span class="tm-mark">Б</span><span class="uk-text-primary">ольшевик</span>
-                        </span>
-                        <span class="uk-text-small uk-light">Ремонт квартир в Москве и МО</span>
-                    </a>
+        <!--Header-->
+        <header class="tm-header" uk-sticky>
+            <nav class="uk-navbar-container uk-navbar-transparent">
+                <div class="uk-container">
+                    <nav uk-navbar>
+                        <div class="uk-navbar-left">
+
+                            <!--logo-->
+                            <a class="uk-navbar-item uk-logo uk-flex-column uk-flex-top" href="/">
+                                    <span class="tm-text-black">
+                                        <span class="tm-mark">Б</span><span class="uk-text-primary">ольшевик</span>
+                                    </span>
+                                <span class="uk-text-small uk-light">Ремонт квартир в Москве и МО</span>
+                            </a>
+
+                        </div>
+
+                        <div class="uk-navbar-right">
+
+                            <div class="uk-navbar-item uk-text-large uk-visible@l">
+                                <div class="tm-text-black uk-light">+7 (926) 111-11-11</div>
+                            </div>
+
+                            <a href="#" class="uk-navbar-item uk-flex-column uk-hidden@l">
+                                <div class="tm-phone-red">
+                                    <img src="/images/phone-receiver.png" alt="">
+                                </div>
+                                <span class="tm-phone-text">Позвонить</span>
+                            </a>
+                        </div>
+                    </nav>
                 </div>
-                <div class="tm-text-black uk-text-large uk-light">+7 (926) 111-11-11</div>
-            </div>
-            <div class="uk-flex uk-flex-center uk-light">
-                <div class="uk-width-2-3 uk-text-center">
-                    <h2 class="tm-h2">
-                        Ваши данные <span class="tm-mark">обрабатываются</span>
-                    </h2>
-                    <p class="uk-margin-medium-bottom uk-text-large">Параметры переданы специалисту, он вам перезвонит в
-                        течении 15 минут
-                        и озвучит цену. Для расчета точной стоимости и составления сметы -
-                        вызовите замерщика, это бесплатно.</p>
-                    <button class="uk-button uk-button-primary">На главную</button>
+            </nav>
+        </header>
+
+        <!-- Section -->
+        <div class="uk-section uk-section-large">
+            <div class="uk-container">
+                <div class="uk-flex uk-flex-center uk-light">
+                    <div class="uk-width-2-3@m uk-text-center">
+                        <h2>
+                            Ваши данные <span class="tm-mark">обрабатываются</span>
+                        </h2>
+                        <p class="uk-margin-medium-bottom uk-text-large">Параметры переданы специалисту, он вам перезвонит в
+                            течении 15 минут
+                            и озвучит цену. Для расчета точной стоимости и составления сметы -
+                            вызовите замерщика, это бесплатно.</p>
+                        <button class="uk-button uk-button-primary">На главную</button>
+                    </div>
                 </div>
+
             </div>
         </div>
+
     </div>
 
     <!-- Off-canvas -->

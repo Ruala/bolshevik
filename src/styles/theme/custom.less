@@ -58,10 +58,6 @@
   }
 }
 
-.tm-h2 {
-  font-size: 36px;
-}
-
 .tm-mark {
   color: @global-secondary-background;
 }
@@ -215,7 +211,17 @@
   }
 }
 
+.tm-footer {
+  min-height: 530px;
+  box-sizing: border-box;
+}
 .tm-contacts {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 1;
+  width: 400px;
+  max-width: calc(100% - 30px);
   min-height: 530px;
   padding: 50px 30px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -223,6 +229,13 @@
 
   h2 {
     font-size: 36px;
+  }
+}
+
+@media (min-width: 640px) {
+
+  .tm-contacts {
+    right: 30px;
   }
 }
 
