@@ -1,10 +1,12 @@
-// import rangesliderJs from 'rangeslider-js';
-// import 'rangeslider-js/dist/styles.min.css';
-//
+// import rangesliderJs from 'rangeslider.js';
+// import 'rangeslider.js';
 // rangesliderJs.create(document.querySelectorAll('input[type="range"]'));
-// $(() => {
-//     console.dir($.fn);
-//     console.dir($.fn.rangeslider);
-//
-//     // $('input[type="range"]').rangeslider();
-// });
+import ion from 'ion-rangeslider';
+// rangesliderJs($);
+$(() => {
+    console.log('slider');
+    console.dir(ion);
+    // console.dir($.fn.rangeslider);
+
+    // $('input[type="range"]').rangeslider();
+});
