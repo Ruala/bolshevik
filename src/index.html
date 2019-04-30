@@ -51,7 +51,7 @@
 
                                     <div class="uk-navbar-item uk-flex-column uk-flex-bottom uk-text-large uk-visible@l">
                                         <div class="tm-text-black uk-light">+7 (926) 111-11-11</div>
-                                        <a href="#" class="uk-text-primary">Заказать звонок</a>
+                                        <a href="#tm-modal-call" class="uk-text-primary" uk-toggle>Заказать звонок</a>
                                     </div>
 
                                     <a href="#" class="uk-navbar-item uk-flex-column uk-hidden@l">
@@ -253,12 +253,14 @@
                 <div class="uk-container">
                     <h2 class="uk-text-center">Наши работы</h2>
 
-                    <ul class="tm-tab uk-child-width-expand"
+                    <button class="tm-button-tabcontrol uk-button uk-button-default"><span class="tm-tabcontrol-name">Все</span></button>
+
+                    <ul class="tm-tab uk-child-width-expand uk-animation-fade uk-transition-fade"
                         uk-tab="connect: #tm-portfolio-tab; animation: uk-animation-fade">
-                        <li><a href="#"><span class="uk-margin-small-right">Все</span> <span class="tm-tab__count">18</span></a></li>
-                        <li><a href="#"><span class="uk-margin-small-right">Косметический</span> <span class="tm-tab__count">8</span></a></li>
-                        <li><a href="#"><span class="uk-margin-small-right">Капитальный</span> <span class="tm-tab__count">6</span></a></li>
-                        <li><a href="#"><span class="uk-margin-small-right">Евроремонт</span> <span class="tm-tab__count">6</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Все</span> <span class="tm-tab__count">18</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Косметический</span> <span class="tm-tab__count">8</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Капитальный</span> <span class="tm-tab__count">6</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Евроремонт</span> <span class="tm-tab__count">6</span></a></li>
                     </ul>
 
                     <ul id="tm-portfolio-tab" class="uk-switcher uk-margin">
@@ -4755,7 +4757,7 @@
         </div>
 
         <!--Footer-->
-        <footer class="uk-section uk-padding-remove uk-position-relative">
+        <footer class="tm-footer uk-section uk-padding-remove uk-position-relative">
             <div id="map" class="tm-map"></div>
             <div class="uk-container uk-flex uk-flex-right uk-position-relative">
                 <div class="tm-contacts">
@@ -4807,6 +4809,7 @@
                 <div class="">
                     <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>
                 </div>
+                <div class="tm-spinner" data-uk-spinner="ratio: 4.5"></div>
             </form>
         </div>
     </div>
@@ -4843,6 +4846,26 @@
                 </div>
                 <div class="tm-margin-sm-vertical">
                     <input class="uk-input" type="text" placeholder="Телефон">
+                </div>
+                <div class="">
+                    <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="tm-modal-call" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body tm-modal-small">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h4 class="uk-modal-title">Ваши данные <span class="tm-mark">отправлены</span> специалисту на расчет</h4>
+            <p class="uk-margin-small">Оставьте свои данные, чтобы мы могли дозвониться и озвучить цену</p>
+            <form class="user-modal-form"  action="mail/mailer.php">
+                <div class="tm-margin-sm-vertical">
+                    <input class="uk-input" type="text" name="name" placeholder="Имя">
+                </div>
+                <div class="tm-margin-sm-vertical">
+                    <input class="uk-input" type="text" name="phone" placeholder="Телефон">
                 </div>
                 <div class="">
                     <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>

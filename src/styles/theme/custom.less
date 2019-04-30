@@ -58,10 +58,6 @@
   }
 }
 
-.tm-h2 {
-  font-size: 36px;
-}
-
 .tm-mark {
   color: @global-secondary-background;
 }
@@ -215,7 +211,17 @@
   }
 }
 
+.tm-footer {
+  min-height: 530px;
+  box-sizing: border-box;
+}
 .tm-contacts {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 1;
+  width: 400px;
+  max-width: calc(100% - 30px);
   min-height: 530px;
   padding: 50px 30px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -223,6 +229,13 @@
 
   h2 {
     font-size: 36px;
+  }
+}
+
+@media (min-width: 640px) {
+
+  .tm-contacts {
+    right: 30px;
   }
 }
 
@@ -256,6 +269,65 @@
 .tm-phone-text {
   font-size: 9px;
   color: #fff;
+}
+
+.tm-button-tabcontrol {
+  display: none;
+  position: relative;
+
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 50px;
+
+  border-width: 2px;
+  text-align: left;
+
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    display: block;
+
+    top: 0;
+    right: 25px;
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: @global-primary-background;
+    font-size: 20px;
+    content: '\f078';
+  }
+
+  &.tm-tabcontrol-button-pressed {
+    &::before {
+      content: '\f077';
+    }
+  }
+
+  //&:hover::before {
+  //  color: @button-default-hover-border;
+  //}
+}
+
+.tm-spinner {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  //display: none;
+  //stroke-width: 1px!important;
+  //stroke: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+.js__sending {
+  position: relative;
+
+  .tm-spinner {
+    display: block;
+    z-index: 999;
+  }
 }
 
 
@@ -321,5 +393,13 @@
 
   .tm-tab {
     display: none;
+  }
+
+  .tm-button-tabcontrol {
+    display: block;
+  }
+
+  .tm-tabcontrol-open {
+    display: block;
   }
 }
