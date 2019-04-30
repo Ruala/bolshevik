@@ -15,11 +15,11 @@
         <div>
 
             <!-- Section -->
-            <div class="tm-pageheader uk-section uk-background-cover uk-position-relative"
+            <div class="tm-pageheader uk-section uk-padding-remove-top uk-background-cover uk-position-relative"
                  style="background-image: url(images/bg-main-top.jpg);">
 
                 <!--Header-->
-                <header class="uk-position-top">
+                <header class="tm-header" uk-sticky>
                     <nav class="uk-navbar-container uk-navbar-transparent">
                         <div class="uk-container">
                             <nav uk-navbar>
@@ -71,7 +71,7 @@
                     </nav>
                 </header>
 
-                <div class="uk-container">
+                <div class="tm-pageheader__container uk-container">
                     <h1 class="uk-text-center@m uk-light">Ремонт квартир <span class="tm-mark">под ключ</span> в Москве и
                         МО</h1>
 
@@ -141,28 +141,32 @@
                                                     <div class="uk-form-controls">
                                                         <div>
                                                             <label class="uk-flex uk-margin-small">
-                                                            <span><input class="uk-radio" type="radio"
+                                                            <span class="uk-margin-small-right"><input class="uk-radio" type="radio"
                                                                          name="app-rep-type" value="redecorating"></span>
-                                                                <span class="uk-margin-small-left">Косметический</span>
+                                                                <span class="uk-margin-small-right">Косметический</span>
+                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
                                                         <div>
                                                             <label class="uk-flex uk-margin-small">
-                                                            <span><input class="uk-radio" type="radio" name="app-rep-type" value="overhaul"
+                                                            <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="app-rep-type" value="overhaul"
                                                                          checked></span>
-                                                                <span class="uk-margin-small-left">Капитальный</span>
+                                                                <span class="uk-margin-small-right">Капитальный</span>
+                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
                                                         <div>
                                                             <label class="uk-flex uk-margin-small">
-                                                                <span><input class="uk-radio" type="radio" name="app-rep-type" value="euro"></span>
-                                                                <span class="uk-margin-small-left">Евроремонт</span>
+                                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="app-rep-type" value="euro"></span>
+                                                                <span class="uk-margin-small-right">Евроремонт</span>
+                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
                                                         <div>
                                                             <label class="uk-flex">
-                                                                <span><input class="uk-radio" type="radio" name="app-rep-type" value="all3"></span>
-                                                                <span class="uk-margin-small-left">Рассчитать 3  варианта</span>
+                                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="app-rep-type" value="all3"></span>
+                                                                <span class="uk-margin-small-right">Рассчитать 3  варианта</span>
+                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
 
@@ -332,7 +336,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="uk-width-2-5@m">
+                                        <div class="uk-width-large@m">
                                             <div class="uk-padding-small uk-padding-remove-horizontal">
                                                 <div class="tm-font-size-medium uk-margin-small-bottom">
                                                     <div class="uk-text-bold">ул. Линкольна, д. 48</div>
@@ -4521,20 +4525,23 @@
                                     <div class="uk-grid uk-flex-middle uk-margin" uk-grid>
                                         <div>
                                             <label class="uk-flex uk-margin-small">
-                                                <span><input class="uk-radio" type="radio" name="radio2"></span>
-                                                <span class="uk-margin-small-left">Косметический</span>
+                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2"></span>
+                                                <span class="uk-margin-small-right">Косметический</span>
+                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="uk-flex uk-margin-small">
-                                                <span><input class="uk-radio" type="radio" name="radio2" checked></span>
-                                                <span class="uk-margin-small-left">Капитальный</span>
+                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2" checked></span>
+                                                <span class="uk-margin-small-right">Капитальный</span>
+                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="uk-flex uk-margin-small">
-                                                <span><input class="uk-radio" type="radio" name="radio2"></span>
-                                                <span class="uk-margin-small-left">Евроремонт</span>
+                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2"></span>
+                                                <span class="uk-margin-small-right">Евроремонт</span>
+                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
                                             </label>
                                         </div>
                                     </div>
@@ -4733,8 +4740,8 @@
                             </div>
                         </div>
                         <div class="uk-light">
-                            <h2>Пройдите тест и получите <span class="tm-mark">смету в 3-ех</span> комплектациях</h2>
-                            <div>
+                            <h2 class="uk-margin-medium-bottom">Пройдите тест и получите <span class="tm-mark">смету в 3-ех</span> комплектациях</h2>
+                            <div class="uk-margin-medium-bottom">
                                 <a href="#" class="uk-button uk-button-large uk-button-primary">Пройти тест и узнать стоимость</a>
                             </div>
                             <ul class="uk-list uk-margin-bottom">
