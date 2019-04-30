@@ -18,11 +18,11 @@
 @button-small-padding-horizontal: @global-small-gutter;
 @button-large-padding-horizontal: @global-medium-gutter;
 
-@button-default-background: @global-muted-background;
+@button-default-background: transparent;
 @button-default-color: @global-emphasis-color;
-@button-default-hover-background: darken(@button-default-background, 5%);
+@button-default-hover-background: transparent;
 @button-default-hover-color: @global-emphasis-color;
-@button-default-active-background: darken(@button-default-background, 10%);
+@button-default-active-background: transparent;
 @button-default-active-color: @global-emphasis-color;
 
 @button-primary-background: @global-primary-background;
@@ -68,9 +68,9 @@
 
 @button-border-width: @global-border-width;
 
-@button-default-border: @global-border;
-@button-default-hover-border: darken(@global-border, 20%);
-@button-default-active-border: darken(@global-border, 30%);
+@button-default-border: @global-primary-background;
+@button-default-hover-border: @global-primary-background; //darken(@global-primary-background, 20%);
+@button-default-active-border: @global-primary-background; //darken(@global-primary-background, 30%);
 
 @button-disabled-border: @global-border;
 
