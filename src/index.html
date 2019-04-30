@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -295,20 +295,18 @@
                 <div class="uk-container">
                     <h2 class="uk-text-center">Наши работы</h2>
 
-                    <button class="tm-button-tabcontrol uk-button uk-button-default"><span class="tm-tabcontrol-name">Все</span>
-                    </button>
+                    <div class="tm-tabcontrol-wrapper uk-animation-slide-top uk-transition-slide-top">
+                        <button class="tm-button-tabcontrol uk-button uk-button-default"><span class="tm-tabcontrol-name">Все</span></button>
 
-                    <ul class="tm-tab uk-child-width-expand uk-animation-fade uk-transition-fade"
-                        uk-tab="connect: #tm-portfolio-tab; animation: uk-animation-fade">
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Все</span> <span
-                                class="tm-tab__count">18</span></a></li>
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Косметический</span>
-                            <span class="tm-tab__count">8</span></a></li>
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Капитальный</span> <span
-                                class="tm-tab__count">6</span></a></li>
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Евроремонт</span> <span
-                                class="tm-tab__count">6</span></a></li>
-                    </ul>
+                        <ul class="tm-tab uk-child-width-expand uk-animation-fade uk-transition-fade"
+                            uk-tab="connect: #tm-portfolio-tab; animation: uk-animation-fade">
+                            <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Все</span> <span class="tm-tab__count">18</span></a></li>
+                            <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Косметический</span> <span class="tm-tab__count">8</span></a></li>
+                            <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Капитальный</span> <span class="tm-tab__count">6</span></a></li>
+                            <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Евроремонт</span> <span class="tm-tab__count">6</span></a></li>
+                        </ul>
+                    </div>
+
 
                     <ul id="tm-portfolio-tab" class="uk-switcher uk-margin">
                         <li>
@@ -5009,9 +5007,8 @@
                     <input class="uk-input" type="text" name="phone" placeholder="Телефон">
                 </div>
                 <div class="">
-                    <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>
+                    <button class="tm-button_spinner uk-button uk-button-primary uk-width-1-1">Узнать цену <div class="tm-spinner" data-uk-spinner></div></button>
                 </div>
-                <div class="tm-spinner" data-uk-spinner="ratio: 4.5"></div>
             </form>
         </div>
     </div>
@@ -5030,7 +5027,7 @@
                     <input class="uk-input" type="text" placeholder="Телефон">
                 </div>
                 <div class="">
-                    <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>
+                    <button class="tm-button_spinner uk-button uk-button-primary uk-width-1-1">Узнать цену <div class="tm-spinner" data-uk-spinner></div></button>
                 </div>
             </form>
         </div>
@@ -5050,7 +5047,7 @@
                     <input class="uk-input" type="text" placeholder="Телефон">
                 </div>
                 <div class="">
-                    <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>
+                    <button class="tm-button_spinner uk-button uk-button-primary uk-width-1-1">Узнать цену <div class="tm-spinner" data-uk-spinner></div></button>
                 </div>
             </form>
         </div>
@@ -5070,7 +5067,7 @@
                     <input class="uk-input" type="text" name="phone" placeholder="Телефон">
                 </div>
                 <div class="">
-                    <button class="uk-button uk-button-primary uk-width-1-1">Узнать цену</button>
+                    <button class="tm-button_spinner uk-button uk-button-primary uk-width-1-1">Узнать цену <div class="tm-spinner" data-uk-spinner></div></button>
                 </div>
             </form>
         </div>
@@ -5083,7 +5080,10 @@
 
             <div class="uk-card uk-flex uk-flex-center">
                 <ul class="uk-nav">
-                    <li><a href="#"></a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li class="uk-active"><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </div>

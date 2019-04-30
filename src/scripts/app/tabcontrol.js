@@ -10,12 +10,13 @@ $(() => {
 
     function handleTabToggle() {
         $controlledTab.toggleClass('tm-tabcontrol-open');
-        $(this).toggleClass('tm-tabcontrol-button-pressed');
+        $tabcontrolButton.toggleClass('tm-tabcontrol-button-pressed');
     }
 
     function handleTabcontrolNameChange() {
         const $controlledTabItem = $(this).find('.tm-tabcontrol-item');
         $tabcontrolName.html($controlledTabItem.html());
+        handleTabToggle();
     }
 
 });
