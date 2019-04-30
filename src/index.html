@@ -72,7 +72,8 @@
                 </header>
 
                 <div class="tm-pageheader__container uk-container">
-                    <h1 class="uk-text-center@m uk-light">Ремонт квартир <span class="tm-mark">под ключ</span> в Москве и
+                    <h1 class="uk-text-center@m uk-light">Ремонт квартир <span class="tm-mark">под ключ</span> в Москве
+                        и
                         МО</h1>
 
                     <div class="tm-pageheader__content uk-margin-auto">
@@ -88,33 +89,48 @@
                                 <div class="uk-width-expand">
                                     <h3>Рассчитайте стоимость ремонта</h3>
 
-                                    <form class="calculate-price-form">
+                                    <form id="calculate-price-form-1">
                                         <div class="uk-grid" uk-grid>
                                             <div class="uk-width-expand">
                                                 <div class="uk-grid uk-grid-small uk-flex-middle uk-margin" uk-grid>
                                                     <div class="uk-width-auto">
-                                                        <div class="tm-amount">45</div>
+                                                        <div class="tm-amount" id="app-square-1">45</div>
                                                     </div>
 
                                                     <div class="uk-width-expand">
                                                         <h6 class="uk-margin-remove">Площадь, м. кв.</h6>
                                                         <div>
-                                                            <input class="uk-range" type="range" value="45" min="0"
-                                                                   max="150" step="1" name="app-square">
+                                                            <input
+                                                                    class="uk-range"
+                                                                    type="range"
+                                                                    value="45"
+                                                                    min="0"
+                                                                    max="150"
+                                                                    step="1"
+                                                                    name="app-square"
+                                                                    data-target="#app-square-1">
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="uk-grid uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
+                                                <div class="uk-grid uk-grid-small uk-flex-middle uk-margin-medium"
+                                                     uk-grid>
                                                     <div class="uk-width-auto">
-                                                        <div class="tm-amount">2</div>
+                                                        <div class="tm-amount" id="app-room-count-1">2</div>
                                                     </div>
 
                                                     <div class="uk-width-expand">
                                                         <h6 class="uk-margin-remove">Количество комнат</h6>
                                                         <div>
-                                                            <input class="uk-range" type="range" value="2" min="0" max="5"
-                                                                   step="1" name="app-room-count">
+                                                            <input
+                                                                    class="uk-range"
+                                                                    type="range"
+                                                                    value="2"
+                                                                    min="0"
+                                                                    max="5"
+                                                                    step="1"
+                                                                    name="app-room-count"
+                                                                    data-target="#app-room-count-1">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -124,49 +140,70 @@
                                                         <h6 class="uk-margin-remove">Материалы:</h6>
                                                     </div>
                                                     <div>
-                                                        <label><input class="uk-checkbox" type="checkbox" name="app-materials-black" checked><span class="uk-margin-small-left">Черновые</span></label>
+                                                        <label><input class="uk-checkbox" type="checkbox"
+                                                                      name="app-materials-black" checked><span
+                                                                class="uk-margin-small-left">Черновые</span></label>
                                                     </div>
                                                     <div>
-                                                        <label><input class="uk-checkbox" type="checkbox" name="app-materials-clean"><span class="uk-margin-small-left">Чистовые</span></label>
+                                                        <label><input class="uk-checkbox" type="checkbox"
+                                                                      name="app-materials-clean"><span
+                                                                class="uk-margin-small-left">Чистовые</span></label>
                                                     </div>
                                                 </div>
 
 
                                             </div>
 
-                                        <div class="uk-width-auto@m">
-                                            <div class="uk-width-small">
-                                                <h6>Тип ремонта:</h6>
+                                            <div class="uk-width-auto@m">
+                                                <div class="uk-width-small">
+                                                    <h6>Тип ремонта:</h6>
 
                                                     <div class="uk-form-controls">
                                                         <div>
                                                             <label class="uk-flex uk-margin-small">
-                                                            <span class="uk-margin-small-right"><input class="uk-radio" type="radio"
-                                                                         name="app-rep-type" value="redecorating"></span>
+                                                            <span class="uk-margin-small-right"><input class="uk-radio"
+                                                                                                       type="radio"
+                                                                                                       name="app-rep-type"
+                                                                                                       value="redecorating"></span>
                                                                 <span class="uk-margin-small-right">Косметический</span>
-                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                                <span class="tm-tooltip"
+                                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                                        class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
                                                         <div>
                                                             <label class="uk-flex uk-margin-small">
-                                                            <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="app-rep-type" value="overhaul"
-                                                                         checked></span>
+                                                            <span class="uk-margin-small-right"><input class="uk-radio"
+                                                                                                       type="radio"
+                                                                                                       name="app-rep-type"
+                                                                                                       value="overhaul"
+                                                                                                       checked></span>
                                                                 <span class="uk-margin-small-right">Капитальный</span>
-                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                                <span class="tm-tooltip"
+                                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                                        class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
                                                         <div>
                                                             <label class="uk-flex uk-margin-small">
-                                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="app-rep-type" value="euro"></span>
+                                                                <span class="uk-margin-small-right"><input
+                                                                        class="uk-radio" type="radio"
+                                                                        name="app-rep-type" value="euro"></span>
                                                                 <span class="uk-margin-small-right">Евроремонт</span>
-                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                                <span class="tm-tooltip"
+                                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                                        class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
                                                         <div>
                                                             <label class="uk-flex">
-                                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="app-rep-type" value="all3"></span>
+                                                                <span class="uk-margin-small-right"><input
+                                                                        class="uk-radio" type="radio"
+                                                                        name="app-rep-type" value="all"></span>
                                                                 <span class="uk-margin-small-right">Рассчитать 3  варианта</span>
-                                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                                <span class="tm-tooltip"
+                                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                                        class="fas fa-question-circle"></i></span>
                                                             </label>
                                                         </div>
 
@@ -189,7 +226,10 @@
                                             <div>Скидку 20% до 1 июня</div>
                                         </div>
                                         <div class="uk-margin-top">
-                                            <a href="#tm-modal-calculator" class="uk-button uk-button-primary js__calculate-price-form" uk-toggle>Рассчитать стоимость</a>
+                                            <a href="#tm-modal-calculator"
+                                               class="uk-button uk-button-primary js__calculate-price-form" uk-toggle
+                                               data-target="#calculate-price-form-1">Рассчитать
+                                                стоимость</a>
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +253,8 @@
                                 договору - никаких скрытых платежей.
                             </div>
                             <div>
-                                <a href="#tm-document-example" class="uk-text-bold" uk-scroll>Посмотреть перечень документов</a>
+                                <a href="#tm-document-example" class="uk-text-bold" uk-scroll>Посмотреть перечень
+                                    документов</a>
                             </div>
                         </div>
 
@@ -249,18 +290,24 @@
             </div>
 
             <!-- Section -->
-            <div id="tm-portfolio" class="tm-portfolio uk-section uk-background-cover" style="background-image: url(images/bg-main-central.jpg);">
+            <div id="tm-portfolio" class="tm-portfolio uk-section uk-background-cover"
+                 style="background-image: url(images/bg-main-central.jpg);">
                 <div class="uk-container">
                     <h2 class="uk-text-center">Наши работы</h2>
 
-                    <button class="tm-button-tabcontrol uk-button uk-button-default"><span class="tm-tabcontrol-name">Все</span></button>
+                    <button class="tm-button-tabcontrol uk-button uk-button-default"><span class="tm-tabcontrol-name">Все</span>
+                    </button>
 
                     <ul class="tm-tab uk-child-width-expand uk-animation-fade uk-transition-fade"
                         uk-tab="connect: #tm-portfolio-tab; animation: uk-animation-fade">
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Все</span> <span class="tm-tab__count">18</span></a></li>
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Косметический</span> <span class="tm-tab__count">8</span></a></li>
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Капитальный</span> <span class="tm-tab__count">6</span></a></li>
-                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Евроремонт</span> <span class="tm-tab__count">6</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Все</span> <span
+                                class="tm-tab__count">18</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Косметический</span>
+                            <span class="tm-tab__count">8</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Капитальный</span> <span
+                                class="tm-tab__count">6</span></a></li>
+                        <li><a href="#"><span class="tm-tabcontrol-item uk-margin-small-right">Евроремонт</span> <span
+                                class="tm-tab__count">6</span></a></li>
                     </ul>
 
                     <ul id="tm-portfolio-tab" class="uk-switcher uk-margin">
@@ -356,7 +403,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -435,7 +483,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -514,7 +563,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -593,7 +643,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -672,7 +723,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -751,7 +803,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -830,7 +883,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -909,7 +963,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -988,7 +1043,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1067,7 +1123,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1146,7 +1203,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1225,7 +1283,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1304,7 +1363,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1405,7 +1465,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1484,7 +1545,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1563,7 +1625,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1642,7 +1705,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1721,7 +1785,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1800,7 +1865,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1879,7 +1945,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1958,7 +2025,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2037,7 +2105,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2116,7 +2185,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2195,7 +2265,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2274,7 +2345,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2353,7 +2425,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2454,7 +2527,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2533,7 +2607,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2612,7 +2687,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2691,7 +2767,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2770,7 +2847,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2849,7 +2927,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2928,7 +3007,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3007,7 +3087,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3086,7 +3167,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3165,7 +3247,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3244,7 +3327,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3323,7 +3407,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3402,7 +3487,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3503,7 +3589,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3582,7 +3669,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3661,7 +3749,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3740,7 +3829,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3819,7 +3909,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3898,7 +3989,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -3977,7 +4069,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4056,7 +4149,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4135,7 +4229,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4214,7 +4309,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4293,7 +4389,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4372,7 +4469,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4451,7 +4549,8 @@
                                                 </ul>
 
                                                 <div>
-                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                                    <a href="#tm-modal-calculator" class="uk-button uk-button-primary"
+                                                       uk-toggle>Рассчитать стоимость</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -4517,7 +4616,7 @@
 
                     <div class="tm-calculator uk-card uk-card-default uk-card-body uk-width-xxlarge uk-margin-auto">
 
-                        <form class="uk-form-horizontal">
+                        <form class="uk-form-horizontal" id="calculate-price-form-2">
 
                             <div class="uk-margin">
                                 <div class="uk-form-label uk-h6">Выберите вид ремонта:</div>
@@ -4525,23 +4624,48 @@
                                     <div class="uk-grid uk-flex-middle uk-margin" uk-grid>
                                         <div>
                                             <label class="uk-flex uk-margin-small">
-                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2"></span>
+                                                <span class="uk-margin-small-right">
+                                                    <input
+                                                            class="uk-radio"
+                                                            type="radio"
+                                                            value="redecorating"
+                                                            name="app-rep-type">
+                                                </span>
                                                 <span class="uk-margin-small-right">Косметический</span>
-                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                <span class="tm-tooltip"
+                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                        class="fas fa-question-circle"></i></span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="uk-flex uk-margin-small">
-                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2" checked></span>
+                                                <span class="uk-margin-small-right">
+                                                    <input
+                                                            class="uk-radio"
+                                                            type="radio"
+                                                            name="app-rep-type"
+                                                            value="overhaul"
+                                                            checked>
+                                                </span>
                                                 <span class="uk-margin-small-right">Капитальный</span>
-                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                <span class="tm-tooltip"
+                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                        class="fas fa-question-circle"></i></span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="uk-flex uk-margin-small">
-                                                <span class="uk-margin-small-right"><input class="uk-radio" type="radio" name="radio2"></span>
+                                                <span class="uk-margin-small-right">
+                                                    <input
+                                                            class="uk-radio"
+                                                            type="radio"
+                                                            value="euro"
+                                                            name="app-rep-type">
+                                                </span>
                                                 <span class="uk-margin-small-right">Евроремонт</span>
-                                                <span class="tm-tooltip" uk-tooltip="Текст содержание всплывающей подсказки"><i class="fas fa-question-circle"></i></span>
+                                                <span class="tm-tooltip"
+                                                      uk-tooltip="Текст содержание всплывающей подсказки"><i
+                                                        class="fas fa-question-circle"></i></span>
                                             </label>
                                         </div>
                                     </div>
@@ -4553,11 +4677,19 @@
                                 <div class="uk-form-controls uk-form-controls-text">
                                     <div class="uk-grid uk-grid-small uk-flex-middle uk-margin" uk-grid>
                                         <div class="uk-width-auto">
-                                            <div class="tm-amount">45</div>
+                                            <div class="tm-amount" id="app-square-2">45</div>
                                         </div>
 
                                         <div class="uk-width-expand">
-                                            <input class="uk-range" type="range" value="45" min="0" max="150" step="1">
+                                            <input
+                                                    class="uk-range"
+                                                    type="range"
+                                                    value="45"
+                                                    min="0"
+                                                    max="150"
+                                                    step="1"
+                                                    name="app-square"
+                                                    data-target="#app-square-2">
                                         </div>
                                     </div>
                                 </div>
@@ -4568,10 +4700,23 @@
                                 <div class="uk-form-controls uk-form-controls-text">
                                     <div class="uk-grid uk-flex-middle uk-margin" uk-grid>
                                         <div>
-                                            <label><input class="uk-checkbox" type="checkbox" checked><span class="uk-margin-small-left">Черновые</span></label>
+                                            <label>
+                                                <input
+                                                        class="uk-checkbox"
+                                                        type="checkbox"
+                                                        name="app-materials-black"
+                                                        checked>
+                                                <span class="uk-margin-small-left">Черновые</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <label><input class="uk-checkbox" type="checkbox"><span class="uk-margin-small-left">Чистовые</span></label>
+                                            <label>
+                                                <input
+                                                        class="uk-checkbox"
+                                                        type="checkbox"
+                                                        name="app-materials-clean">
+                                                <span class="uk-margin-small-left">Чистовые</span>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -4580,22 +4725,40 @@
                             <div class="uk-margin">
                                 <div class="uk-h6">Дополнительные работы:</div>
                                 <div class="uk-form-controls uk-margin-remove">
-                                    <div class="uk-child-width-1-3@m uk-grid uk-flex-stretch uk-margin uk-text-small" uk-grid>
+                                    <div class="uk-child-width-1-3@m uk-grid uk-flex-stretch uk-margin uk-text-small"
+                                         uk-grid>
                                         <div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                name="dismantling-of-old-coatings"
+                                                                checked>
+                                                    </span>
                                                     <span class="uk-margin-small-left">Демонтаж старых покрытий</span></label>
                                             </div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                name="dismantling-of-old-electricians">
+                                                    </span>
                                                     <span class="uk-margin-small-left">Демонтаж старой электрики</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                name="installation-of-stretch-ceiling"
+                                                                checked>
+                                                    </span>
                                                     <span class="uk-margin-small-left">Монтаж натяжного потолка</span>
                                                 </label>
                                             </div>
@@ -4604,19 +4767,35 @@
                                         <div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                name="installation-of-interior-doors"
+                                                                type="checkbox">
+                                                    </span>
                                                     <span class="uk-margin-small-left">Установка межкомнатных дверей</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                name="cabling"
+                                                                type="checkbox">
+                                                    </span>
                                                     <span class="uk-margin-small-left">Прокладка кабеля</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                name="primer-walls-and-floor"
+                                                                checked>
+                                                    </span>
                                                     <span class="uk-margin-small-left">Грунтовка стен и пола</span>
                                                 </label>
                                             </div>
@@ -4625,19 +4804,35 @@
                                         <div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox" checked></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                type="checkbox"
+                                                                name="putty-and-plaster-walls"
+                                                                checked>
+                                                    </span>
                                                     <span class="uk-margin-small-left">Шпатлевка и штукатурка стен</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                name="linoleum-flooring-carpet"
+                                                                type="checkbox">
+                                                    </span>
                                                     <span class="uk-margin-small-left">Настил линолеума, ковролина</span>
                                                 </label>
                                             </div>
                                             <div>
                                                 <label class="uk-flex uk-margin-small">
-                                                    <span><input class="uk-checkbox" type="checkbox"></span>
+                                                    <span>
+                                                        <input
+                                                                class="uk-checkbox"
+                                                                name="electrical-installation"
+                                                                type="checkbox">
+                                                    </span>
                                                     <span class="uk-margin-small-left">Монтаж электроточки</span>
                                                 </label>
                                             </div>
@@ -4648,7 +4843,10 @@
                             </div>
 
                             <div class="uk-margin uk-text-center">
-                                <a href="#tm-modal-calculator" class="uk-button uk-button-primary" uk-toggle>Рассчитать стоимость</a>
+                                <a href="#tm-modal-calculator"
+                                   class="uk-button uk-button-primary js__calculate-price-form"
+                                   data-target="#calculate-price-form-2" uk-toggle>Рассчитать
+                                    стоимость</a>
                             </div>
                         </form>
 
@@ -4692,7 +4890,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="uk-inline" href="images/document.jpg" data-caption="Накладная на материалы">
+                                    <a class="uk-inline" href="images/document.jpg"
+                                       data-caption="Накладная на материалы">
                                         <div class="uk-margin-small-bottom">
                                             <img src="images/document.jpg" alt="">
                                         </div>
@@ -4730,7 +4929,8 @@
             </div>
 
             <!-- Section -->
-            <div class="uk-section uk-padding-remove-bottom uk-background-cover" style="background-image: url(images/bg-main-bottom.jpg);">
+            <div class="uk-section uk-padding-remove-bottom uk-background-cover"
+                 style="background-image: url(images/bg-main-bottom.jpg);">
                 <div class="uk-container">
                     <div class="uk-child-width-1-2@m uk-grid" uk-grid>
                         <div class="uk-visible@m">
@@ -4740,9 +4940,11 @@
                             </div>
                         </div>
                         <div class="uk-light">
-                            <h2 class="uk-margin-medium-bottom">Пройдите тест и получите <span class="tm-mark">смету в 3-ех</span> комплектациях</h2>
+                            <h2 class="uk-margin-medium-bottom">Пройдите тест и получите <span class="tm-mark">смету в 3-ех</span>
+                                комплектациях</h2>
                             <div class="uk-margin-medium-bottom">
-                                <a href="#" class="uk-button uk-button-large uk-button-primary">Пройти тест и узнать стоимость</a>
+                                <a href="#" class="uk-button uk-button-large uk-button-primary">Пройти тест и узнать
+                                    стоимость</a>
                             </div>
                             <ul class="uk-list uk-margin-bottom">
                                 <li><span class="tm-star">Оплата после приемки</span></li>
@@ -4799,7 +5001,7 @@
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <h4 class="uk-modal-title">Ваши данные <span class="tm-mark">отправлены</span> специалисту на расчет</h4>
             <p class="uk-margin-small">Оставьте свои данные, чтобы мы могли дозвониться и озвучить цену</p>
-            <form class="user-modal-form"  action="mail/mailer.php">
+            <form class="user-modal-form" action="mail/mailer.php">
                 <div class="tm-margin-sm-vertical">
                     <input class="uk-input" type="text" name="name" placeholder="Имя">
                 </div>
@@ -4860,7 +5062,7 @@
             <button class="uk-modal-close-default" type="button" uk-close></button>
             <h4 class="uk-modal-title">Ваши данные <span class="tm-mark">отправлены</span> специалисту на расчет</h4>
             <p class="uk-margin-small">Оставьте свои данные, чтобы мы могли дозвониться и озвучить цену</p>
-            <form class="user-modal-form"  action="mail/mailer.php">
+            <form class="user-modal-form" action="mail/mailer.php">
                 <div class="tm-margin-sm-vertical">
                     <input class="uk-input" type="text" name="name" placeholder="Имя">
                 </div>

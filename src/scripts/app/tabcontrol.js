@@ -5,7 +5,6 @@ $(() => {
     const $controlledTab = $('.tm-tab');
     const $controlledTabElement = $controlledTab.find('li > a');
 
-
     $tabcontrolButton.on('click', handleTabToggle);
     $controlledTabElement.on('click', handleTabcontrolNameChange);
 
