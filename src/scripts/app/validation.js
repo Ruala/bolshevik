@@ -1,5 +1,5 @@
 import jqValidation from 'jquery-validation';
-import { formData } from "./forms";
+import { getFormData, setFormData } from "./forms";
 
 jqValidation.validator.addMethod('phoneRus', function(value) {
     return value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/gi);
@@ -13,6 +13,7 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
             const $currModalForm = $(form);
             const currData = $currModalForm.serializeArray();
             const url = $currModalForm.attr('action');
+            const formData = getFormData();
 
             $currModalForm.addClass('js__sending');
 
@@ -23,7 +24,7 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
                 success: (response) => {
                     console.log("succes");
                     console.dir(response);
-                    formData = null;
+                    setFormData(null);
                     goToNewUrl('thanks.html');
                 },
                 error: (error) => {
