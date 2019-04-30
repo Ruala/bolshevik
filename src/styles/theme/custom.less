@@ -271,6 +271,46 @@
   color: #fff;
 }
 
+.tm-button-tabcontrol {
+  display: none;
+  position: relative;
+
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 50px;
+
+  border-width: 2px;
+  text-align: left;
+
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    display: block;
+
+    top: 0;
+    right: 25px;
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: @global-primary-background;
+    font-size: 20px;
+    content: '\f078';
+  }
+
+  &.tm-tabcontrol-button-pressed {
+    &::before {
+      content: '\f077';
+    }
+  }
+
+  //&:hover::before {
+  //  color: @button-default-hover-border;
+  //}
+}
+
 
 @media (max-width: 959px) {
 
@@ -334,5 +374,13 @@
 
   .tm-tab {
     display: none;
+  }
+
+  .tm-button-tabcontrol {
+    display: block;
+  }
+
+  .tm-tabcontrol-open {
+    display: block;
   }
 }

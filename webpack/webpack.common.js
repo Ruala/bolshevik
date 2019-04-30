@@ -36,8 +36,10 @@ module.exports = {
             inject: "body",
         }),
         new webpack.ProvidePlugin({
+            'window.jQuery': 'jquery',
+            'window.$': 'jquery',
             $: 'jquery',
-            jQuery: 'jquery'
+            jQuery: 'jquery',
         }),
     ],
     module: {
