@@ -38,13 +38,23 @@
 
 .uk-slider {
 
-  a {
+  a:not(.uk-slidenav) {
     color: @global-color;
+  }
+
+  a {
     text-decoration: none;
 
     h5 {
       color: @global-secondary-background
     }
+  }
+}
+
+.uk-subnav {
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -71,8 +81,31 @@
   }
 }
 
+.tm-tooltip {
+  display: block;
+  min-width: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  color: #d8d8d8;
+
+  &:hover {
+    color: @global-primary-background;
+  }
+}
+
+.tm-header {
+  transition: background-color 0.2s ease-in-out;
+
+  &.uk-active {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
 .tm-pageheader {
-  padding-top: 160px;
+
+  &__container {
+    padding-top: 80px;
+  }
 
   &__content {
     max-width: 1030px;
