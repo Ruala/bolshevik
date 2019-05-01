@@ -12,7 +12,7 @@ $(() => {
 
         function handleOpenModalClick() {
             const $btn = $(this);
-            const $form = $($btn.attr('data-target'));
+            const $form = $($btn.attr('data-target-form'));
             setFormData($form.serializeArray());
         }
     })();
