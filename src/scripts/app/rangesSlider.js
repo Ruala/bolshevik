@@ -1,5 +1,5 @@
-import noUiSlider from 'nouislider';
-import 'nouislider/distribute/nouislider.css';
+import noUiSlider from '../vendors/nouislider/nouislider';
+import '../vendors/nouislider/nouislider.css';
 
 const simpleRangeInput = document.querySelectorAll('input[type="range"]');
 const handleSlideWrapper = (target, input) => (values, handle) => {
@@ -26,7 +26,9 @@ const handleInputWrapper = (slider, input, min, max) => (e) => {
 
 for (const input of simpleRangeInput) {
     const options = {
-        start: input.value,
+        connect: true,
+        solo: true,
+        start: [input.value, parseInt(input.getAttribute('max'))],
         step: parseInt(input.getAttribute('step')) || 1,
         range: {
             'min': parseInt(input.getAttribute('min')),
@@ -40,8 +42,19 @@ for (const input of simpleRangeInput) {
     const handleSlide = handleSlideWrapper(target, input);
 
     input.style.display = 'none';
+    slider.classList.add('noUi-solo');
     parent.insertBefore(slider, input);
     noUiSlider.create(slider, options);
+
+    const handlers = slider.querySelectorAll('[data-handle]');
+
+    for (const handler of handlers) {
+        const index = parseInt(handler.getAttribute('data-handle'));
+
+        if (index === 0) continue;
+
+        handler.style.visibility = 'hidden';
+    }
 
     slider.noUiSlider.on('slide', handleSlide);
     target.addEventListener('input', handleInput);
