@@ -299,3 +299,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-solo .noUi-connect {
   background: #d6d6d6;
 }
+
+.noUi-solo .noUi-connects {
+  border-radius: 0;
+}
