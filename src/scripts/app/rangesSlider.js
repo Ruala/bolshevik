@@ -8,7 +8,7 @@ const handleSlideWrapper = (target, input) => (values, handle) => {
     target.value = val;
     input.value = val;
 };
-const handleInputWrapper = (slider, input, min, max) => (e) => {
+const handleChangeWrapper = (slider, input, min, max) => (e) => {
     const target = e.target;
     let val = parseInt(target.value);
 
@@ -22,6 +22,38 @@ const handleInputWrapper = (slider, input, min, max) => (e) => {
 
     slider.noUiSlider.set(val);
     input.value = val;
+};
+const targetHandlersWrapper = () => {
+    let savedVal = null;
+
+    return {
+        handleTargetFocus: (e) => {
+            const target = e.target;
+
+            savedVal = target.value;
+            target.value = '';
+        },
+        handleTargetBlur: (e) => {
+            const target = e.target;
+
+            if (target.value) {
+                return;
+            }
+
+            e.target.value = savedVal;
+        },
+    };
+};
+const hideSliderHandlers = (slider) => {
+    const sliderHandlers = slider.querySelectorAll('[data-handle]');
+
+    for (const handler of sliderHandlers) {
+        const index = parseInt(handler.getAttribute('data-handle'));
+
+        if (index === 0) continue;
+
+        handler.style.visibility = 'hidden';
+    }
 };
 
 for (const input of simpleRangeInput) {
@@ -38,24 +70,21 @@ for (const input of simpleRangeInput) {
     const parent = input.parentNode;
     const slider = document.createElement('div');
     const target = document.querySelector(input.getAttribute('data-target'));
-    const handleInput = handleInputWrapper(slider, input, options.range.min, options.range.max);
+    const handleChange = handleChangeWrapper(slider, input, options.range.min, options.range.max);
     const handleSlide = handleSlideWrapper(target, input);
+    const {handleTargetFocus, handleTargetBlur} = targetHandlersWrapper();
+
 
     input.style.display = 'none';
     slider.classList.add('noUi-solo');
     parent.insertBefore(slider, input);
+
     noUiSlider.create(slider, options);
-
-    const handlers = slider.querySelectorAll('[data-handle]');
-
-    for (const handler of handlers) {
-        const index = parseInt(handler.getAttribute('data-handle'));
-
-        if (index === 0) continue;
-
-        handler.style.visibility = 'hidden';
-    }
+    hideSliderHandlers(slider);
 
     slider.noUiSlider.on('slide', handleSlide);
-    target.addEventListener('input', handleInput);
+
+    target.addEventListener('change', handleChange);
+    target.addEventListener('focus', handleTargetFocus);
+    target.addEventListener('blur', handleTargetBlur);
 }

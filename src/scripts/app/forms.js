@@ -2,6 +2,7 @@ let calcFormData = null;
 
 export const getFormData = () => calcFormData;
 export const setFormData = (data) => calcFormData = data;
+export const resetFormData = () => calcFormData = null;
 
 $(() => {
     //data gathering

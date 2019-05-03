@@ -1,5 +1,5 @@
 import jqValidation from 'jquery-validation';
-import { getFormData, setFormData } from "./forms";
+import { getFormData, resetFormData } from "./forms";
 
 jqValidation.validator.addMethod('phoneRus', function(value) {
     return value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/gi);
@@ -12,7 +12,6 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
         submitHandler: function (form) {
             const $currModalForm = $(form);
             const currData = $currModalForm.serializeArray();
-            const url = $currModalForm.attr('action');
             const formData = getFormData();
             const $btn = $currModalForm.find('button, input[type="submit"]');
 
@@ -21,13 +20,13 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
             $currModalForm.addClass('js__sending');
 
             $.ajax({
-                url,
+                url: 'mail/mailer.php',
                 data: $.param(formData ? formData.concat(currData) : currData),
                 type: 'POST',
                 success: (response) => {
                     console.log("succes");
                     console.dir(response);
-                    setFormData(null);
+                    resetFormData();
                     goToNewUrl('thanks.html');
                 },
                 error: (error) => {
@@ -44,7 +43,7 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
             name: "required",
             phone: {
                 required: true,
-                phoneRus: true
+                phoneRus: true,
             },
         },
         messages: {
@@ -53,10 +52,6 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
                 required: "Пожалуйста, введите свой номер телефона",
                 phoneRus: "Пожалуйста, введите корректный номер телефона"
             },
-            email: {
-                email: "Пожалуйста, введите корректный почтовый адрес"
-            },
-            message: "Пожалуйста, введите вопрос."
         },
         errorElement: "em",
         errorPlacement: function (error, element) {
@@ -75,6 +70,7 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
         const $form = jqValidation(this);
 
         $form.validate(validateOptions);
+        $form.on('submit', e => e.preventDefault());
     });
 
     function goToNewUrl(windowPath) {
