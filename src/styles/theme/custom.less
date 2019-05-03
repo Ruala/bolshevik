@@ -464,3 +464,32 @@
     }
   }
 }
+
+@media (max-width: 639px) {
+  .uk-subnav-pill > * > :first-child {
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .uk-subnav-pill > * > :first-child {
+    padding: 5px;
+  }
+
+  .tm-tooltip {
+    display: none;
+  }
+
+  .tm-mobile-adaption {
+    font-size: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > * {
+      width: 50%;
+    }
+  }
+}
