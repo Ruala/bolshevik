@@ -1,5 +1,5 @@
 import jqValidation from 'jquery-validation';
-import { getFormData, resetFormData } from "./forms";
+import { getFormData, resetFormData } from "./calcForm";
 
 jqValidation.validator.addMethod('phoneRus', function(value) {
     return value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/gi);
@@ -70,10 +70,15 @@ jqValidation.validator.addMethod('phoneRus', function(value) {
         const $form = jqValidation(this);
 
         $form.validate(validateOptions);
-        $form.on('submit', e => e.preventDefault());
+        $form.on('submit', prevent);
     });
 
     function goToNewUrl(windowPath) {
         window.open(windowPath, '_self');
+    }
+
+    function prevent(e) {
+        e.preventDefault();
+        return false;
     }
 })();

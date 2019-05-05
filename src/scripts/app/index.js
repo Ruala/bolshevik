@@ -1,5 +1,5 @@
 import './rangesSlider';
 import './map';
-import './forms';
+import './calcForm';
 import './validation';
 import './tabcontrol';
